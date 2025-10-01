@@ -34,3 +34,4 @@ According to the whole schematic, designed the whole PCB and there are some issu
 
 Debugged previous problem by adding vias and rerouting, created second version PCB that fits 100mm*100mm and place orders of it.
 ![](Second_PCB.png) 
+
