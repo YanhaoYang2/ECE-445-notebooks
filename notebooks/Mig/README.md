@@ -18,3 +18,15 @@ My initial design also incorporates a current sensor for stall detection. For pr
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/control_unit_schematics.png?raw=true)
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/threevolts_buckconverter.png?raw=true)
+
+# 2025-10-08 - Breadboard Demo 1
+
+For our first breadboard demonstration, we acquired components from the available modules in ECEB 2070 and assembled a prototype. Since we have not yet received the components we ordered, such as the motors, servos, and buck converters, we used readily available components from the lab instead. While these substitute components are not fully compatible with our final design, they were sufficient for demonstration purposes.
+
+I and Jimmy helped each other code a simple program to move the motor and allow it to turn using Adafruit H-Bridge module.
+
+During the meeting, Professor Kumar provided valuable feedback on our design. He emphasized the importance of ensuring our robot is properly balanced and capable of effectively flipping opponents. He also suggested incorporating a self-righting mechanism in case our robot gets flipped during battle. Possible solutions include adding an additional set of wheels or designing the structure to be inherently unstable, making it easier to flip back upright.
+
+Additionally, Professor Kumar noted that the current sensor may no longer be necessary. Instead, he recommended that we focus on monitoring the energy consumption throughout the match and tracking how much battery capacity remains to ensure our robot can operate for the full duration of the battle.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/breadboard1.jpg?raw=true)
