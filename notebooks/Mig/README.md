@@ -30,3 +30,10 @@ During the meeting, Professor Kumar provided valuable feedback on our design. He
 Additionally, Professor Kumar noted that the current sensor may no longer be necessary. Instead, he recommended that we focus on monitoring the energy consumption throughout the match and tracking how much battery capacity remains to ensure our robot can operate for the full duration of the battle.
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/breadboard1.jpg?raw=true)
+
+# 2025-10-12 - First PCB Done
+
+Jimmy combined individual subsystems of the schematics that we designed into one and route everything into one board.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/fullschematics.png?raw=true)
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/routedpcb.png?raw=true)
