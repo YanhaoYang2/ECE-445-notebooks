@@ -37,3 +37,15 @@ Jimmy combined individual subsystems of the schematics that we designed into one
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/fullschematics.png?raw=true)
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/routedpcb.png?raw=true)
+
+# 2025-10-13 - Changes in components used
+
+We realized that the components we initially planned to use were too expensive, thus in our design document, we looked for cheaper alternatives that still satisfy the requirements of the battlebots.
+
+We are using Servocity's 508 RPM Mini Econ Gear Motor and DSSERVO 20KG Digital Servo instead.
+
+- Motor Driver: [508 RPM Mini Econ Gear Motor](https://www.servocity.com/508-rpm-mini-econ-gear-motor/)
+- Servo: [ANNIMOS 20KG Digital Servo](https://www.amazon.com/ANNIMOS-Digital-Waterproof-DS3218MG-Control/dp/B076CNKQX4)
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/motordriver.jpg?raw=true)
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/servo.jpg?raw=true)
