@@ -49,3 +49,14 @@ We are using Servocity's 508 RPM Mini Econ Gear Motor and DSSERVO 20KG Digital S
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/motordriver.jpg?raw=true)
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/servo.jpg?raw=true)
+
+# 2025-10-17 - Designing the Battlebot 3D-Printed Structure
+
+John and I collaborated on the mechanical design and 3D modeling using Tinkercad. The main chassis features a trapezoid-shaped body (24 cm long × 13 cm wide × 8 cm tall) with a wider base that lowers the center of gravity and increases stability against being lifted or flipped. The front incorporates a sloped wedge design to slide under opponents while deflecting attacks. The chassis includes a central cavity for the servo motor with full range of motion, plus cable routing channels for wire management.
+
+The weapon shovel measures 16 cm wide (approximately 70% of the robot's frontal width) and consists of a 10 cm shaft connected to the servo and a 10 cm blade extending forward. To optimize the strength-to-weight ratio, I designed lightening holes throughout the blade, removing material from non-critical areas while maintaining strength near the servo attachment and leading edge.
+
+We 3D printed an initial PLA prototype to verify component fitment. Testing revealed minor interference issues with motor mounting holes and PCB standoffs, which are being addressed in the current design iteration.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/shovelinitialdesign.png?raw=true)
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/mainstructure.png?raw=true)
