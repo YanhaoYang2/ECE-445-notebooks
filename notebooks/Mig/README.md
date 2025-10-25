@@ -60,3 +60,7 @@ We 3D printed an initial PLA prototype to verify component fitment. Testing reve
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/shovelinitialdesign.png?raw=true)
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/mainstructure.png?raw=true)
+
+# 2025-10-24 - Breadboard Demo 2
+
+For our second breadboard demonstration, we received some of the ordered components and made progress. We added Bluetooth functionality to enable wireless control and modified the code to support differential drive control with two motors for turning. We also integrated a servo with the 3D-printed structure we designed previously to test the feasibility of the weapon mechanism and verify proper fitment and operation.
