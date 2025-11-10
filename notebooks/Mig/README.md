@@ -70,3 +70,11 @@ For our second breadboard demonstration, we received some of the ordered compone
 Our PCB and most of the components we ordered have arrived, allowing us to begin assembly. We initially started soldering by hand but later learned to use solder paste and a heat gun, which significantly simplified and accelerated the process. Soldering the ESP32 and DRV8833 chips proved particularly challenging due to their fine-pitch pins and tight spacing, making it very easy to create solder bridges between adjacent pads. We had to exercise extra care and precision when working with these components to ensure proper connections without shorts.
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/barepcb.jpg?raw=true)
+
+# 2025-11-09 - PCB Testing and Parts Replacement
+
+Since some surface-mount components were unavailable, we substituted through-hole versions of capacitors, resistors, and inductors to save time, trimming their leads and soldering them directly to the board. We encountered adhesion issues with some solder joints, but flux greatly improved the results.
+We systematically tested each subsystem using a multimeter for continuity testing (checking for bridges), voltage measurements (verifying buck converter outputs), capacitance and resistance measurements (validating component values), and diode testing (confirming correct placement and polarity).
+Testing revealed that the buck converters were not functioning properly. The 3.3V converter produced little to no output, while the 5V converter output approximately 10.8V instead of 5V. We traced these issues to soldering defects where the board surface had peeled off and to errors in the schematic design.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/solderedpcb.jpg?raw=true)
