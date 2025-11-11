@@ -20,9 +20,10 @@ We also need to start thinking about integrating different subsystems on our sch
 # 2025-10-09 - Whole Schematics
 
 Getting the microcontroller subsystem schematic and 3.3V buck converters from Mig, I added two more buck converters using LM2596 adjustable version, since 10.8V for Hbridge and 6 V for servo motors are not standard output of voltage regulators.
-![](whole_scheme.png)
+![](whole_scheme1.png)
+
 The choices of resistors and other parameters in designig these buck converters take reference from this:
-![](LM2596adj_ref.png)
+![](LM2596.png)
 
 # 2025-10-12 - Complete First Version of PCB
 
