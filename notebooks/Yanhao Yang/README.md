@@ -35,3 +35,24 @@ According to the whole schematic, designed the whole PCB and there are some issu
 Debugged previous problem by adding vias and rerouting, created second version PCB that fits 100mm*100mm and place orders of it.
 ![](Second_PCB.png)
 
+# 2025-10-21 BlueTooth Control
+
+To implement the Bluetooth control, I start from implementing and testing out giving command to ESP32 to move backward and forward for this motor 
+![](test_motor.jpg)
+
+I started with application Bluetooth_Serial_Terminal to give command to ESP32 and uses Arduino code to program the ESP32 Dev Board. To ensure safety of the bluetooth connection, I set up a code that I have to put in before I give any commands. Since ESP32 Bluetooth module doesn't really support code matching,it will automatically connected to any device, I use the code logic that if the first thing I sent after connection is not the password, disconnect automatically. The result looks pretty good
+
+![](BL_Password.jpg)
+
+Move Forward and Move Backward implemented successfully:
+
+![](motor_bl.jpg)
+
+![](BlueTooth_1.jpg)
+
+The issue is that the motor keeps moving forward or backward continuously until I send a command to reverse or stop it. I want to control it like a car where, if I don't give any command for a moment, it automatically stops.
+
+# 2025-10-22 BlueTooth Control(Time)
+
+I updated the code to include time-based control. In the loop(), if no meaningful command is received within 300 ms, the system stops automatically. This approach relies on streaming where the ESP32 continuously receives 1-byte commands. However, this makes using a password impossible because any noise can interfere, which is the trade-off for real-time control.
+
