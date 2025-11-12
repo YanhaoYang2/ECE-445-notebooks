@@ -56,3 +56,26 @@ The issue is that the motor keeps moving forward or backward continuously until 
 
 I updated the code to include time-based control. In the loop(), if no meaningful command is received within 300 ms, the system stops automatically. This approach relies on streaming where the ESP32 continuously receives 1-byte commands. However, this makes using a password impossible because any noise can interfere, which is the trade-off for real-time control.
 
+# 2025-11-04 PCB soldering
+
+We got PCB and started soldering it and we noticed that we lack some irregular resistor, capacitors SMD. I put orders through DigiKey
+![](PCB1.jpg)
+
+# 2025-11-10 PCB Tested
+
+While some of our ordered components haven't arrived yet, we temporarily replaced them with through-hole versions so we can decide whether to submit a new PCB order for the fourth round. However, our buck converters failed the one intended to output 3.3 V gives 0.1 V, the 10.8 V output gives 12 V, and the 6 V output gives 4.3 V, but with reversed polarity.  
+![](PCB_Soldered.jpg)
+![](BC3.3.jpg)
+![](BC10.8.jpg)
+![](BC6.jpg)
+
+
+# 2025-11-12 Second PCB Order
+
+Considering the buck converter's failure, I rechecked the datasheet and think I used a capacitor meant for decoupling that was too large in value and polarized. It should be small and nonpolarized. I also removed the H bridge chip and used pins to connect with a mature module because the H bridge is too difficult to solder. Additionally, I left power pins available so if our buck converters don't work, we can use external power to boot and load our ESP32.
+![](whole_scheme2.png)
+
+# 2025-11-14 Battery Testing
+
+We obtained an XT30 to JST adapter and a charger for our battery. We started powering the motors and modules on the breadboard using our own battery and tested it by running two wheels for 4 minutes. I believe this duration is sufficient to withstand a competition lasting 2 minutes.
+![](Battery_Test.jpg)
