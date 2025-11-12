@@ -78,3 +78,11 @@ We systematically tested each subsystem using a multimeter for continuity testin
 Testing revealed that the buck converters were not functioning properly. The 3.3V converter produced little to no output, while the 5V converter output approximately 10.8V instead of 5V. We traced these issues to soldering defects where the board surface had peeled off and to errors in the schematic design.
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/solderedpcb.jpg?raw=true)
+
+# 2025-11-12 - Ordering the Second PCB
+
+We revised our PCB design to simplify assembly by switching from the DRV8833 H-Bridge chip to an H-Bridge module, as the fine-pitch chip proved extremely difficult to solder reliably. We also made the power pins easily accessible on the board as a contingency measure, allowing us to use external power sources if the buck converters continue to malfunction.
+
+Following Gayatri's recommendation, we ordered a solder paste stencil to improve the precision and consistency of our soldering process, particularly for surface-mount components.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/secondpcbfullschematics.png?raw=true)
