@@ -86,3 +86,11 @@ We revised our PCB design to simplify assembly by switching from the DRV8833 H-B
 Following Gayatri's recommendation, we ordered a solder paste stencil to improve the precision and consistency of our soldering process, particularly for surface-mount components.
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/secondpcbfullschematics.png?raw=true)
+
+# 2025-11-16 - Refining the Schematics and Order Third PCB
+
+Following our initial PCB design, we identified several errors and soldering challenges that needed to be addressed. To resolve these issues, we decided to replace smaller chips with larger alternatives that are easier to solder while still maintaining the same functionality. We also corrected our component specifications, ensuring we used the proper capacitors, including through-hole versions where needed, as well as the correct diode types and other components. To improve the reliability of wire connections, we implemented screw terminals for enhanced stability. We self-sourced the PCB fabrication and ordered all components directly from DigiKey. Throughout the redesign process, we carefully referenced the datasheets for buck converters, H-bridges, and the ESP32 to ensure proper implementation of our circuit.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/newfullschematics.png?raw=true)
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/routedpcb.png?raw=true)
