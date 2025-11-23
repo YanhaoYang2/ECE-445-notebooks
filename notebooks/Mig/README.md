@@ -94,3 +94,10 @@ Following our initial PCB design, we identified several errors and soldering cha
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/newfullschematics.png?raw=true)
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/routedpcb.png?raw=true)
+
+# 2025-11-21 - Assembling the Robot for Mock Demo
+
+For our mock demo, we decided to build a prototype on breadboard while waiting for the final PCB and component delivery. We utilized an available ESP32 module for Bluetooth communication and overall system control, an Adafruit H-bridge module for motor movement, a 3.3V buck converter to power the ESP32, and a 5V buck converter module for servo operation. The breadboard prototype successfully demonstrated all intended functionality, confirming that our circuit design and component selections were correct. However, we recognized that the final implementation will require a more robust and professionally assembled structure to ensure it can withstand the demands of combat.
+
+![image alt](https://raw.githubusercontent.com/YanhaoYang2/ECE-445-notebooks/37b305e1c3b035360375bdeac09a68e31330c1f8/notebooks/Mig/mockdemorobot.jpg)
+![image alt](https://raw.githubusercontent.com/YanhaoYang2/ECE-445-notebooks/37b305e1c3b035360375bdeac09a68e31330c1f8/notebooks/Mig/breadboardd.jpg)
