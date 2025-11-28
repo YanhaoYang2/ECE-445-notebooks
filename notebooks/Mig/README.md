@@ -101,3 +101,17 @@ For our mock demo, we decided to build a prototype on breadboard while waiting f
 
 ![image alt](https://raw.githubusercontent.com/YanhaoYang2/ECE-445-notebooks/37b305e1c3b035360375bdeac09a68e31330c1f8/notebooks/Mig/mockdemorobot.jpg)
 ![image alt](https://raw.githubusercontent.com/YanhaoYang2/ECE-445-notebooks/37b305e1c3b035360375bdeac09a68e31330c1f8/notebooks/Mig/breadboardd.jpg)
+
+# 2025-11-27 - Final PCB Arrived
+
+Our final PCB arrived, and we soldered all components to the board. We tested each subsystem and component individually using the continuity test on the multimeter to verify that connections weren't shorting, and a voltmeter to measure output voltages at various points along the buck converter, drivetrain motors, and servo, ensuring each component could function as intended.
+
+The soldering and initial testing went smoothly; however, we encountered several issues after connecting the motors and servo to the PCB. First, because our PCB uses a different ESP32 chip than the pre-made module from our earlier breadboard demo, one that uses Bluetooth Low Energy instead of standard Bluetooth, we had to switch our remote control application to Bluefruit Connect. We chose this app because it supports continuous command transmission: for example, the robot moves forward while a button is pressed and stops when released, rather than receiving a single discrete command.
+
+Second, while we could get the motors to move as intended, no signal was coming from the servo's signal pin. We tested it with an oscilloscope but detected nothing. We eventually realized that the pinout on our ESP32 chip differed from the PCB layout, requiring us to adjust the code accordingly.
+
+The final problem involved voltage. When the servo moved, it drew so much current that it pulled voltage away from other components, causing the ESP32's supply to drop below 3.3V and reset the chip. This meant we could only send one command before needing to reconnect the battlebot to the remote. We resolved this issue by adding a pre-made buck converter module connected in parallel for isolation of the system.
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/finalpcb.jpg?raw=true)
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/insideofbattlebot.jpg?raw=true)
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/bluefruitconnect.jpg?raw=true)
