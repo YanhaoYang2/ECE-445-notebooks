@@ -115,3 +115,16 @@ The final problem involved voltage. When the servo moved, it drew so much curren
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/finalpcb.jpg?raw=true)
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/insideofbattlebot.jpg?raw=true)
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/bluefruitconnect.jpg?raw=true)
+
+# 2025-12-03 - Final Demo
+
+After getting all the internal components working, we began assembling everything with the 3D-printed parts. Since our initial weight was just 1 lb—well under the 2 lb limit—we added screws to the back of our battlebot for additional weight, helping balance the front-heavy servo motor.
+
+We encountered another problem: the toy wheels from Amazon didn't fit the motors, and the 3D-printed connectors were too weak to withstand a real battle. To solve this, we 3D-printed new wheels designed to fit the motors directly and reinforced the connections with hot glue. For added traction during movement and turning, we wrapped the wheels with electrical tape to serve as makeshift tires.
+
+Our shovel also broke during testing, so we redesigned it to better distribute force across the structure rather than concentrating stress at a single point. After completing all modifications, we tested everything and confirmed that our battlebot met all requirements. It can last more than two minutes in battle and is durable enough for real combat.
+
+Our final record was 2 wins and 1 loss. Here is a link to one of our battles: https://drive.google.com/file/d/1RE8FONN-sFi-dEDkxu0kXL-BYywnTr4P/view?resourcekey
+
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/insidebattlebotfinal.jpg?raw=true)
+![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/finalbattlebot.jpg?raw=true)
