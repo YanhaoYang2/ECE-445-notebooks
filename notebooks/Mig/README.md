@@ -124,6 +124,8 @@ We encountered another problem: the toy wheels from Amazon didn't fit the motors
 
 Our shovel also broke during testing, so we redesigned it to better distribute force across the structure rather than concentrating stress at a single point. After completing all modifications, we tested everything and confirmed that our battlebot met all requirements. It can last more than two minutes in battle and is durable enough for real combat.
 
+For verification, most requirements could be tested visually, such as movement capabilities. We demonstrated that our battlebot can lift a 2 lb load using phones and water bottles totaling 2 lbs, and used a ruler to measure the shovel's height from the ground. We used a timer to measure how long the servo took to move up and down. For control requirements, we verified that our battlebot's response delay is under 250 ms by recording a video and slowing it to one-quarter speed. In the slowed footage, the delay was under one second, confirming the actual delay is under 250 ms. We also demonstrated that we could maintain control from at least 5 meters away. For mobility, we used a timer and ruler to measure both the distance traveled and the time elapsed. We also timed how long our battlebot could operate continuously in battle. Finally, we used a voltmeter to verify the voltage output at each component.
+
 Our final record was 2 wins and 1 loss. Here is a link to one of our battles: https://drive.google.com/file/d/1RE8FONN-sFi-dEDkxu0kXL-BYywnTr4P/view?resourcekey
 
 ![image alt](https://github.com/YanhaoYang2/ECE-445-notebooks/blob/main/notebooks/Mig/insidebattlebotfinal.jpg?raw=true)
